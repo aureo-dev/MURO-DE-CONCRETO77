@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(40, 101, 255, 0.82);
+  color: #fff;
+  padding: 30px;
+  font-family: Overlock SC;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+a {
+  transition: 0.3s;
+}
+a:hover {
+  scale: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #2865ffd1;
+  height: 90vh;
+}
+
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-header a {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  border-radius: 100px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.lista-de-itens {
+  display: grid;
+  grid-template-columns: repeat(4, 239px);
+  justify-content: space-around;
+}
+
+.item-lista {
+  height: 400px;
+  background-color: #2865ffd1;
+  padding: 10px 0px;
+  border-radius: 50px;
+}
+
+.item-lista img {
+  height: 300px;
+  width: 239px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.texto-item {
+  padding: 10px;
+}
+
+.texto-item h4 {
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.texto-item p {
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main::after {
+  content: "";
+  background: url(/imagens/setaDireita.png) no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 0px;
+  top: 50%;
+  cursor: pointer;
+}
+
+main::before {
+  content: "";
+  background: url(/imagens/setaDireita.png) no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 50%;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .lista-de-itens {
+    grid-template-columns: auto auto;
+    gap: 20px 0px;
+  }
+  main {
+    margin-top: 0;
+  }
+  footer {
+    position: initial;
+  }
+  main::after {
+    display: none;
+  }
+  main::before {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #escudo {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lista-de-itens {
+    grid-template-columns: auto;
+    gap: 20px 0px;
+  }
+  main {
+    margin-top: 0;
+  }
+  footer {
+    position: initial;
+  }
+  .item-header a {
+    font-size: 1.5rem;
+  }
+}

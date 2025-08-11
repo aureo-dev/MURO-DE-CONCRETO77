@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(40, 101, 255, 0.82);
+  color: #fff;
+  padding: 30px;
+  font-family: Overlock SC;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+a {
+  transition: 0.3s;
+}
+a:hover {
+  scale: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #2865ffd1;
+  height: 90vh;
+}
+
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-header a {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  border-radius: 100px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.direita-grid {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  background-color: #00045978;
+  border-radius: 50px;
+}
+
+img {
+  border-radius: 50px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-item {
+  margin-bottom: 180px;
+}
+
+.texto-item h4,
+.texto-item p {
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+}
+
+.btn-grid {
+  padding: 15px 25px;
+  background-color: #2865ffd1;
+  text-align: center;
+  border-radius: 50px;
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.btns {
+  display: grid;
+  gap: 20px;
+}
+
+body::after {
+  content: "";
+  background: url(/imagens/setaDireita.png) no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 80px;
+  top: 50%;
+  cursor: pointer;
+}
+
+body::before {
+  content: "";
+  background: url(/imagens/setaDireita.png) no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 80px;
+  top: 50%;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  body::before {
+    display: none;
+  }
+  body::after {
+    display: none;
+  }
+  main {
+    margin-top: 0;
+  }
+  main::after {
+    display: none;
+  }
+  main::before {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  #escudo {
+    max-width: 60px;
+  }
+  .grid-main {
+    display: grid;
+    width: 450px;
+    grid-template-columns: 1fr;
+  }
+  main {
+    display: grid;
+    place-items: center;
+  }
+  footer {
+    position: initial;
+  }
+  .texto-item h4,
+  .texto-item p {
+    font-size: 2.5rem;
+  }
+  .texto-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 0;
+  }
+  .grid-main {
+    display: grid;
+    width: 300px;
+  }
+  .btn-grid {
+    font-size: 1rem;
+  }
+  .item-header a {
+    font-size: 1.5rem;
+  }
+}

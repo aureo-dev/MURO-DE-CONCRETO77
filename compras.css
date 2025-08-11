@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(40, 101, 255, 0.82);
+  color: #fff;
+  padding: 30px;
+  font-family: Overlock SC;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+a {
+  transition: 0.3s;
+}
+a:hover {
+  scale: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #2865ffd1;
+  height: 90vh;
+}
+
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-header a {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  border-radius: 100px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.esquerda {
+  display: grid;
+  gap: 80px;
+}
+
+.main-item {
+  display: grid;
+  grid-template-columns: 120px auto;
+  gap: 40px;
+}
+
+.main-item input {
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-item {
+  padding: 15px 25px;
+  background: #2865ffd1;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.tamanho input {
+  width: 50px;
+}
+
+.comando input {
+  width: 150px;
+}
+
+.valor input {
+  width: 100px;
+}
+
+.foto {
+  display: grid;
+  grid-template-columns: 120px 200px;
+  place-items: center;
+}
+
+.imagem-envio {
+  padding: 80px;
+}
+
+.imagem-envio img {
+  object-fit: cover;
+  transform: scale(2);
+}
+
+.fundo-branco {
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+}
+
+.btn-anunciar {
+  display: block;
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  justify-self: center;
+  align-self: center;
+  border-radius: 50px;
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+  .btn-anunciar {
+    font-size: 1.5rem;
+    justify-self: initial;
+    margin-top: 10px;
+  }
+  #escudo {
+    max-width: 60px;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  .main-item {
+    gap: 10px;
+  }
+
+  .imagem-envio {
+    padding: 40px;
+  }
+  .foto {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    place-items: center;
+  }
+  .item-header a {
+    font-size: 1.5rem;
+  }
+}
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+}

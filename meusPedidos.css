@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(40, 101, 255, 0.82);
+  color: #fff;
+  padding: 30px;
+  font-family: Overlock SC;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+a {
+  transition: 0.3s;
+}
+a:hover {
+  scale: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #2865ffd1;
+  height: 90vh;
+}
+
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-header a {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  border-radius: 100px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.lista-de-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.esquerda {
+  display: grid;
+  gap: 30px;
+}
+
+.item-lista {
+  display: flex;
+  background-color: #2865ffd1;
+  border-radius: 50px;
+  align-items: center;
+  gap: 80px;
+}
+
+.item-lista img {
+  height: 200px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.texto-item {
+  padding: 10px;
+}
+
+.texto-item h4 {
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.texto-item p {
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.btnAdd {
+  background-color: #2865ffd1;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  gap: 50px;
+  padding: 10px;
+}
+.btnAdd img {
+  max-width: 50px;
+}
+
+.btnFinal {
+  background-color: #2865ffd1;
+  align-self: center;
+  justify-self: center;
+  padding: 50px;
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+@media (max-width: 1200px) {
+  .lista-de-itens {
+    grid-template-columns: 1fr;
+    gap: 20px 0px;
+  }
+  main {
+    margin-top: 0;
+  }
+  footer {
+    position: initial;
+  }
+  .btnAdd {
+    font-size: 1.5rem;
+  }
+  .btnFinal {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #escudo {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lista-de-itens {
+    grid-template-columns: 1fr;
+    gap: 20px 0px;
+  }
+  main {
+    margin-top: 0;
+  }
+  footer {
+    position: initial;
+  }
+  .item-header a {
+    font-size: 1.5rem;
+  }
+  .item-lista {
+    gap: 1  0px;
+  }
+}

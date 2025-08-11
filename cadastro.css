@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2865ffd1;
+  color: #fff;
+  padding: 30px;
+  font-family: Overlock SC;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+a {
+  transition: 0.3s;
+}
+a:hover {
+  scale: 1.2;
+}
+
+button {
+  transition: 0.3s;
+}
+button:hover {
+  scale: 1.2;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  background: rgba(40, 101, 255, 0.82);
+  height: 90vh;
+}
+
+header {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-header a {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  border-radius: 100px;
+}
+
+article {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.article-content {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.article-content img {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.article-content p {
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+form {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+input {
+  display: block;
+  width: 350px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #2865ff;
+  border: none;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: #2865ff;
+  font-family: Overlock SC;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  border-radius: 50px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #escudo {
+    display: none;
+  }
+  .item-header a {
+    font-size: 1.5rem;
+  }
+  .article-content p {
+    font-size: 1.2rem;
+  }
+  .article-content {
+    max-width: 250px;
+  }
+  footer {
+    position: initial;
+  }
+}
+
+@media (max-width: 560px) {
+  input {
+    width: 300px;
+  }
+  button {
+    padding: 5px 15px;
+  }
+}

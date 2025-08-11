@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(40, 101, 255, 0.82);
+  color: #fff;
+  padding: 30px;
+  font-family: Overlock SC;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+a:hover {
+  scale: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #2530ff;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  padding: 10px 20px;
+}
+
+.carrinho {
+  max-width: 70px;
+}
+.lupa {
+  max-width: 80px;
+}
+.lista-header {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-item a {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #2865ffd1;
+  border-radius: 100px;
+}
+
+.header-item img {
+  max-width: 30px;
+}
+
+.lupa-header-inicial {
+  position: absolute;
+  right: 80px;
+}
+
+.lupa-header-inicial img {
+  max-width: 60px;
+}
+
+@media (max-width: 1200px) {
+  .lupa-header-inicial {
+    display: none;
+  }
+  .lista-header {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-item a {
+    font-size: 1.5rem;
+  }
+}
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 58px;
+  margin-bottom: 170px;
+}
+.main-title {
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 58px;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.flex-item img {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .flex-item img {
+    margin-bottom: 20px;
+  }
+  .flex-container {
+    gap: 60px;
+  }
+  main {
+    margin-bottom: 40px;
+  }
+}
+.btn {
+  padding: 20px 80px;
+  background-color: #000dffb8;
+  display: block;
+  display: flex;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 100px;
+}
+
+@media (max-width: 800px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+  .item-header a {
+    font-size: 1.5rem;
+  }
+}
+footer h2 {
+  text-align: center;
+}
